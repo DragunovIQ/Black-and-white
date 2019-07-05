@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="./style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a34eb445a4.js"></script>
+</head>
+<body>
+    <header class="main-nav">
+        <div class="search-container">
+            <input onclick="MySearch()" class="searchy" type="text">
+            <div class="search-line"></div>
+        </div>
+        <h1 class="logo">Black & white</h1>
+            <div class="cart"></div>
+        <div class="login-container"><a href="#" onclick="MyLogIn()">Log in</a></div>
+    </header>
+    <section class="secondary-nav" style="text-transform: uppercase">
+        <ul>
+            <li><a class="a" id="more">More</a></li>
+            <li><a class="a" id="ladiesfragrance">Ladies fragrance</a></li>
+            <li><a class="a" id="gentelmen">Gentelmen fragrance</a></li>
+            <li><a class="a">cosmatics</a></li>
+        </ul>
+    </section>
+    <h1 class="highlight">Highlight<div class="line"></div></h1>
+    <section class="slider">
+        <i class="fas fa-arrow-left" id="prevBtn"></i>
+        <i class="fas fa-arrow-right"  id="nextBtn"></i>
+        
+        <div class="slider-content">
+            <img src="/images/sauvage.jpg" id="lastClone">
+            <img src="/images/lipstick.jpg">
+            <img src="/images/girl.jpg" style="position: relative;">
+            <img src="/images/cdc-homme-fall-20194_1440_1200.jpg">
+            <img src="/images/sauvage.jpg">
+            <img src="/images/lipstick.jpg" id="firstClone">
+        </div>
+    </section>
+    <div class="daily-deals"><h1>Weekly Deals</h1></div>
+    <section class="deals-container">
+        <div id="first-deal">
+            <div class="first-deal1">
+                <img src="/images/perfume1.png">
+                <div class="info-deal2" style="padding: 10px 10px;">
+                        <h1>Shalimar</h1>
+                        <p>Perfume</p>
+                        <p style="font-weight: bold; font-size: 20px;">15% off</p>
+                        <button id="button">Learn More</button>
+                    </div>    
+            </div>
+            <div class="first-deal2">
+                <img src="/images/perfume2.png">
+                <div class="info-deal2" style="padding: 10px 10px;">
+                    <h1>Paradise</h1>
+                    <p>Perfume</p>
+                    <p style="font-weight: bold; font-size: 20px;">20% off</p>
+                    <button id="button">Learn More</button>
+                </div>
+            </div>
+        </div>
+        <div id="second-deal">
+            <div class="second-deal1" style="position: relative;">
+                <img src="/images/blin.png" style="width: 20%; position: absolute; top: 20px; left: 60px;">
+                <div style="padding: 10px 10px;display: flex; flex-direction: column; margin-left: 50%; align-items: center;">
+                    <h1>Dior J'adore</h1>
+                    <p>Perfume</p>
+                    <p style="font-weight: bold; font-size: 20px;">10%</p>
+                    <button id="button" >Learn More</button>
+                </div>
+            </div>
+            <div class="second-deal2" style="display: flex; width: 50%; position: relative;">
+                <img src="/images/perfume3.png" style="width: 20%; position: absolute; top: 20px; left: 60px;">
+                <div style="padding: 10px 10px;margin-left: 50%; width: 100%; display: flex; flex-direction: column; align-items: center;">
+                    <h1>Givenchy</h1>
+                    <p>Perfume</p>
+                 <p style="font-weight: bold; font-size: 20px;">25%</p>
+                 <button id="button" >Learn More</button>
+                </div>
+            </div>
+        </div>
+            
+        <div id="third-deal">
+            <div class="third-deal1"style=" width: 50.2%; height: 100%; position: relative;">
+                <img src="/images/aa.png" style="position: absolute; width: 25%; padding: 10px 10px; top:10px; left: 50px;">
+                <div style="margin-left: 50%; width: 50%; display: flex; flex-direction: column; align-items: center; height: 100%; padding: 10px 10px;">
+                        <h1>COCO Madmoiselle</h1>
+                        <p>Perfume</p>
+                        <p style="font-weight: bold; font-size: 20px;">25%</p>
+                        <button id="button">Learn More</button>       
+                </div>
+            </div>
+
+            <div class="third-deal2" style="width: 50%; position: relative;">
+                <img src="/images/kisspng-ferrari-perfume-eau-de-toilette-scuderia-ferrari-5b4b7b6eb0ad08.0809482215316734547237.png" alt="">
+                <div class="paragraph-deal2" style="display: flex; flex-direction: column; height: 100%; width: 50%; margin-left: 50%; align-items: center; padding: 10px 10px;">
+                        <h1>SCUDERIA FERRARI</h1>
+                        <p>Perfume</p>
+                        <p style="font-weight: bold; font-size: 20px;">FREE!!</p>
+                        <button id="button" onclick="myFunction()" class="prank-btn" >Learn More</button>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+    <div class="first-section-pic">
+        <img src="/images/module-2-capture-youth2_1440_1200.jpg">
+        <button id="find-out">Find out</button>
+    </div>
+
+    <div style="width: 100%; height: 930px; background: rgb(24, 24, 24);">
+    <div id="men-container">
+        <p id="for-men">For men</p>
+        <div id="men-intro" style="position: relative">
+            <button style="position: absolute; left: 10%; top: 70%; padding: 15px 35px 15px 35px; border: 1px solid; background: transparent; color: rgb(43, 152, 255); cursor: pointer; ">Discover</button>
+        </div>
+        <div id="btns">
+            <div id="btn-sc1">
+                <button style="background-image: url(/images/outfit.jpg); background-size: cover; box-shadow: inset 0 0 180px #000000; color: white">Outfits</button>
+                <button style="background-image: url(/images/glasses.jpg); background-size: cover; box-shadow: inset 0 0 180px #000000; color: white">Glasses</button>
+            </div>
+            <div id="btn-sc2">
+                <button style="background-image: url(/images/per-men.jpg); background-size: cover; box-shadow: inset 0 0 180px #000000; color: white">Pefumes</button>
+                <button style="background-image: url(/images/watch.jpg); background-size: cover; box-shadow: inset 0 0 180px #000000; color:rgb(228, 228, 228)">Watches</button>
+            </div>
+            <div id="btn-sc3">
+                <button style="background-image: url(/images/fashion-footwear-19090.jpg); background-size: cover; box-shadow: inset 0 0 180px #000000; color:white;">Shoes</button>
+                <button style="background-image: url(/images/headwear.jpg); background-size: cover; box-shadow: inset 0 0 180px #000000; color:white;">Headwear</button>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+    <footer style="width: 100%; height: 300px; border: none; display: none;";>
+        <div class="footer-container">
+            
+        </div>
+    </footer>
+    <script src="./app.js"></script>
+</body>
+</html>
